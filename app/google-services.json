@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "356453378130",
+    "firebase_url": "https://relatoriostdm.firebaseio.com",
+    "project_id": "relatoriostdm",
+    "storage_bucket": "relatoriostdm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:356453378130:android:07f82f423c1660ec",
+        "android_client_info": {
+          "package_name": "com.sadestorm.tdm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "356453378130-53kgf94eb2p1k8v8sfn93psofiofjldd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX_EigdIV33zqw9PTkTO7O5esaxIFXyvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "356453378130-53kgf94eb2p1k8v8sfn93psofiofjldd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
