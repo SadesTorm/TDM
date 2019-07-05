@@ -34,24 +34,41 @@ public class AdapterRelatorioDiario extends RecyclerView.Adapter<AdapterRelatori
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder viewHolder, int i) {
+        CadastroOs ordemServico = listaOs.get(i);
+
+        viewHolder.clientetxt.setText(ordemServico.getCliente());
+        viewHolder.copiadotxt.setText(ordemServico.getCopiado());
+        viewHolder.datatxt.setText(ordemServico.getDia()+"/"+ordemServico.getMes()+"/"+ordemServico.getAno());
+        viewHolder.servicotxt.setText(ordemServico.getServico());
+        viewHolder.numeroSerietxt.setText(ordemServico.getnSerie());
+
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+
+        return listaOs.size();
     }
 
     public class MyViewHolder extends  RecyclerView.ViewHolder {
 
-        TextView cliente;
-        TextView numeroSerie;
-        TextView data;
-        TextView servico;
-        TextView copiado;
+
+
+        TextView clientetxt;
+        TextView numeroSerietxt;
+        TextView datatxt;
+        TextView servicotxt;
+        TextView copiadotxt;
 
         public MyViewHolder(@NonNull View itemView) {
+
             super(itemView);
+            clientetxt = itemView.findViewById(R.id.textViewCliente);
+            numeroSerietxt = itemView.findViewById(R.id.textViewNserie);
+            datatxt = itemView.findViewById(R.id.textViewData);
+            servicotxt = itemView.findViewById(R.id.textViewServico);
+            copiadotxt = itemView.findViewById(R.id.textViewCopiado);
         }
     }
 
